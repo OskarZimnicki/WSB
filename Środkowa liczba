@@ -1,0 +1,31 @@
+namespace Zadanie2_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int liczba1, liczba2, liczba3;  
+            Console.WriteLine("Podaj 3 rózne liczby");
+            liczba1 = System.Convert.ToInt32(Console.ReadLine());
+            liczba2 = System.Convert.ToInt32(Console.ReadLine());
+            liczba3 = System.Convert.ToInt32(Console.ReadLine());
+            
+
+            if (liczba1 > liczba2 && liczba1 < liczba3 || liczba1 < liczba2 && liczba1 > liczba3)
+            {
+                Console.WriteLine("Liczba " + liczba1 + " jest środkowa");
+            }
+            else if (liczba2 > liczba1 && liczba2 < liczba3 || liczba2 < liczba1 && liczba2 > liczba3)
+            {
+                Console.WriteLine("Liczba " + liczba2 + " jest środkowa");
+            }
+            else if (liczba3 > liczba1 && liczba3 < liczba2 || liczba3 < liczba2 && liczba3 > liczba1){
+                Console.WriteLine("Liczba " + liczba3 + " jest środkowa");
+            }
+            else
+            {
+                Console.WriteLine("Podaj różne liczby");
+            }
+        }
+    }
+}
