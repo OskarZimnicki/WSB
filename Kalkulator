@@ -1,0 +1,44 @@
+namespace Zadanie2_5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+            int op;
+            Console.WriteLine("Podaj a");
+            a = System.Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Podaj a");
+            b = System.Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Wybierz operator:");
+            Console.WriteLine("'*' - mnożenie \t '/' - dzielenie");
+            Console.WriteLine("'+' - dodawanie \t '-' - odejmowanie");
+            Console.WriteLine("'^' - potęgowanie \t '%' - modulo");
+            op = System.Convert.ToChar(Console.ReadLine());
+
+
+            switch (op)
+            {
+                case '*':
+                    Console.WriteLine(a * b);
+                    break;
+                case '/':
+                    Console.WriteLine(a / b);
+                    break;
+                case '+':
+                    Console.WriteLine(a + b);
+                    break;
+                case '-':
+                    Console.WriteLine(a - b);
+                    break;
+                case '^':
+                    Console.WriteLine(Math.Pow(a,b));
+                    break;
+                case '&':
+                    Console.WriteLine(a % b);
+                    break;
+                
+            }
+        }
+    }
+}
