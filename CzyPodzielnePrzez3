@@ -1,0 +1,24 @@
+namespace Zadanie2_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int liczba = 12;
+            int s, d, j;
+            s = liczba / 100;
+            liczba = liczba - s * 100;
+            d = liczba / 10;
+            liczba = liczba -d * 10;
+            j = liczba;
+            if ((s+d+j) % 3 == 0)
+            {
+                Console.WriteLine("podzielnia przez 3");
+            }
+            else
+            {
+                Console.WriteLine("Liczba nie jest podzielna przez 3");
+            }
+        }
+    }
+}
