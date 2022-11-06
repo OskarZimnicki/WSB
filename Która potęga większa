@@ -1,0 +1,19 @@
+namespace Zadanie2_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double x, y;
+            x = Math.Pow(Math.Sqrt(2), Math.Sqrt(3));
+            y = Math.Pow(Math.Sqrt(3), Math.Sqrt(2));
+            if x > y {
+                Console.WriteLine("x jest większe od y jest równe " + x);
+            }
+            else {
+                Console.WriteLine("y jest większe od x jest równe " + y);
+            }
+
+        }
+    }
+}
