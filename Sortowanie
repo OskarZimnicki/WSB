@@ -1,0 +1,25 @@
+namespace Zadanie2_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c;
+            int tmp;
+            Console.WriteLine("Podaj 3 rózne liczby");
+            a = System.Convert.ToInt32(Console.ReadLine());
+            b = System.Convert.ToInt32(Console.ReadLine());
+            c = System.Convert.ToInt32(Console.ReadLine());
+            if (a > b){
+                tmp = a; a = b; b = tmp;
+            }
+            if (b > c){
+                tmp = b; b=c; c = tmp;  
+            }
+            if (a > b){
+                tmp = a; a = b; b = tmp;
+            }
+            Console.Write(a + " " + b + " " + c);
+        }
+    }
+}
